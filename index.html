@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,
+		initial-scale=1, shrink-to-fit=no">
+
+	<title>Crack-The-Code Game</title>
+
+	<!-- Bootstrap CDN starts-->
+	<link rel="stylesheet" href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		crossorigin="anonymous">
+	
+	<script src=
+"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		crossorigin="anonymous">
+	</script>
+	<!-- Bootstrap CDN ends -->
+
+	<!-- Font Awesome kit --- for icons -->
+	<script src="https://kit.fontawesome.com/788fc8cac3.js"
+		crossorigin="anonymous">
+	</script>
+
+	<!-- Google font CDN for Christmas font -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<!-- Google font CDN ends -->
+
+	<!-- Internal CSS -->
+	<style>
+		* {
+			font-family: 'Roboto';
+		}
+
+		input {
+			width: 60px;
+			height: 40px;
+			border-radius: 5px;
+			text-align: center;
+		}
+
+        .message {
+            color: green;
+        }
+
+        .message-failure {
+            color: red;
+        }
+
+		#counter {
+			color: white;
+		}
+
+		.row.m-auto {
+			place-content: center;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container my-4">
+		<h1 class="text-center my-4"><i class="fas
+				fa-unlock-alt"></i>Crack the Safe</h1>
+
+        <div class="text-center message"></div>
+
+		<!-- 3 input fields -->
+		<div class="text-center">
+			<input type="text" id="b1">
+			<input type="text" id="b2">
+			<input type="text" id="b3">
+			<br />
+			<!-- Button to check result -->
+			<button class="btn btn-secondary mt-4">
+				<i class="fas fa-key"></i> Check
+				<div id="counter"></div>
+			</button>
+		</div>
+		<hr>
+
+		<!-- Hints starts -->
+		<div id="hints" class="row m-auto">
+		</div>
+		<!-- Hints ends -->
+
+	</div>
+</body>
+<!-- JavaScript file included -->
+    <script type="text/javascript" src="dist/bundle.js"></script>
+</html>
