@@ -2,7 +2,7 @@ const { validate } = require("./utils/validate");
 const { countdown } = require("./utils/timer");
 const { setHints } = require("./utils/hints");
 
-const loadFrank = () => {
+const loadTestCaseA = () => {
   const numbers = [4, 0, 9];
 
   // Hints
@@ -11,7 +11,7 @@ const loadFrank = () => {
   const third = [numbers[1], numbers[2], 7];
   const fourth = [3, numbers[1], numbers[2]];
 
-  setHints("frank", { first, second, third, fourth });
+  setHints("testCaseA", { first, second, third, fourth });
   const message = document.querySelector(".message");
   const button = document.querySelector("button");
   button.onclick = () => validate(num1, num2, num3); // Ensure we're validating against the correct values
@@ -26,4 +26,4 @@ const loadFrank = () => {
   }
 };
 
-module.exports = { loadFrank };
+module.exports = { loadTestCaseA };

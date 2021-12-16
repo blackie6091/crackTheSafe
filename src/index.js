@@ -1,10 +1,10 @@
-const { loadRichie } = require("./richie");
-const { loadJoel } = require("./joel");
-const { loadJoe } = require("./joe");
-const { loadFrank } = require("./frank");
+const { loadTestCaseA } = require("./testCaseA");
+const { loadTestCaseB } = require("./testCaseB");
+const { loadTestCaseC } = require("./testCaseC");
+const { loadTestCaseD } = require("./testCaseD");
 const { load404 } = require("./404");
 
-var search = location.search.substring(1) || "?user=";
+var search = location.search.substring(1) || "?case=";
 const result = JSON.parse(
   '{"' +
     decodeURI(search)
@@ -13,18 +13,18 @@ const result = JSON.parse(
       .replace(/=/g, '":"') +
     '"}'
 );
-switch (result.user) {
-  case "richie":
-    loadRichie();
+switch (result.case) {
+  case "a":
+    loadTestCaseA();
     break;
-  case "joe":
-    loadJoe();
+  case "b":
+    loadTestCaseB();
     break;
-  case "joel":
-    loadJoel();
+  case "c":
+    loadTestCaseC();
     break;
-  case "frank":
-    loadFrank();
+  case "d":
+    loadTestCaseD();
     break;
   default:
     load404();

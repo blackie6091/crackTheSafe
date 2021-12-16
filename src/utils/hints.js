@@ -1,7 +1,7 @@
 const { randomizeHints } = require("./randomize");
 
 const hintMap = {
-  frank: ({ first, second, third, fourth }) => [
+  testCaseA: ({ first, second, third, fourth }) => [
     `
     <div class="card-body">
         <p id="h1" class="text-center"><input type="text" id="b1" value="${first[0]}" readonly> <input type="text" id="b1"
@@ -41,7 +41,7 @@ const hintMap = {
             </h5>
     </div>`,
   ],
-  joe: ({ first, second, third, fourth }) => [
+  testCaseB: ({ first, second, third, fourth }) => [
     `
     <div class="card-body">
         <p id="h1" class="text-center"><input type="text" id="b1" value="${first[0]}" readonly> <input type="text" id="b1"
@@ -81,7 +81,7 @@ const hintMap = {
             </h5>
     </div>`,
   ],
-  joel: ({ first, second, third, fourth }) => [
+  testCaseC: ({ first, second, third, fourth }) => [
     `
     <div class="card-body">
         <p id="h1" class="text-center"><input type="text" id="b1" value="${first[0]}" readonly> <input type="text" id="b1"
@@ -121,7 +121,7 @@ const hintMap = {
             </h5>
     </div>`,
   ],
-  richie: ({ first, second, third, fourth }) => [
+  testCaseD: ({ first, second, third, fourth }) => [
     `
     <div class="card-body">
         <p id="h1" class="text-center"><input type="text" id="b1" value="${first[0]}" readonly> <input type="text" id="b1"
