@@ -14,7 +14,7 @@ const loadTestCaseC = () => {
   setHints("testCaseC", { first, second, third, fourth });
   const message = document.querySelector(".message");
   const button = document.querySelector("button");
-  button.onclick = () => validate(num1, num2, num3); // Ensure we're validating against the correct values
+  button.onclick = () => validate(numbers[0], numbers[1], numbers[2]); // Ensure we're validating against the correct values
 
   // We want to avoid people just guessing the numbers incrementally so we'll throw in some logic
   // that will track their guesses and make them wait. This logic survives refreshes as well.
