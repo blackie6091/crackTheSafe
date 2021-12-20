@@ -1,6 +1,7 @@
 const { validate } = require("./utils/validate");
 const { countdown } = require("./utils/timer");
 const { setHints } = require("./utils/hints");
+const { autoFocus } = require("./utils/autoFocus");
 
 const loadTestCaseA = () => {
   const numbers = [4, 0, 9];
@@ -15,6 +16,7 @@ const loadTestCaseA = () => {
   const message = document.querySelector(".message");
   const button = document.querySelector("button");
   button.onclick = () => validate(numbers[0], numbers[1], numbers[2]); // Ensure we're validating against the correct values
+  autoFocus();
 
   // We want to avoid people just guessing the numbers incrementally so we'll throw in some logic
   // that will track their guesses and make them wait. This logic survives refreshes as well.
